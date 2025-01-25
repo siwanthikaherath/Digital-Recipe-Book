@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore, create, and share your culinary journey with our Digital Recipe App. Find, save, and personalize your favorite recipes easily.">
+    <title>Digital Recipe App</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+         /* Hero Header Section home*/
+  .hero-header {
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.6)
+    ), url('https://c1.wallpaperflare.com/preview/513/870/409/cook-healthy-food-eat.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+      
+    }
+    
+    .hero-header h1 {
+      font-size: 3.5em;
+      margin-bottom: 20px;
+      color: #eee5e5;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+     
+    }
+    .hero-header .container {
+      max-width: 800px;
+      padding: 0 15px;
+  }
+    
+    .hero-header p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+      color: #f0f0f0;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+  
+    .hero-header .btn-primary{
+      background-color: #f06705;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .hero-header .btn-primary:hover{
+        background-color: #555;
+      
+    }
+  
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .hero-header {
+          height: 400px;
+      }
+      
+      .hero-header h1 {
+          font-size: 2.5em;
+      }
+      
+      .hero-header p {
+          font-size: 1em;
+      }
+  }
+  
+        /* Hero Header Section login*/
+ .hero-header-login {
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 2px solid orange;
+    background-image: url('https://st2.depositphotos.com/3300441/6319/i/450/depositphotos_63197527-stock-photo-baking-background-with-blank-cook.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+  }
+  
+  .hero-header-login h1 {
+    font-size: 3em;
+    color: rgb(252, 3, 3);
+    margin-bottom: 20px;
+    font-weight: bold;
+   
+  }
+  
+  .hero-header-login p {
+    font-size: 1.5em;
+    color: #fefeff;
+    margin-bottom: 20px;
+  }
+  
+  .hero-header-login .btn-second{
+    background-color: #7b7775;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .hero-header-login .btn-second:hover{
+      background-color: #b6a1a1;
+    
+  }
+  
+  
+  .hero-header-login .btn-primary{
+    background-color: #f06705;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .hero-header-login .btn-primary:hover{
+      background-color: #555;
+    
+  }
+  
+  
+    /* About Us Section Styles */
+  .about-us {
+    padding: 3rem 1rem;
+    background-color: #f8f9fa; 
+    text-align: center;
+  }
+  
+  .about-us h4 {
+    font-size: 1.5rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-us h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-us p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Styles for the video section */
+  .video {
+    background-color: #f8f9fa; 
+    padding: 3rem 1rem; 
+  }
+  
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%; 
+    margin: 0 auto; 
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .video {
+        padding: 2rem 1rem;
+    }
+  }
+  
+  
+  /* Styles for the Recipes section */
+  .recipes {
+    background-color: #fdf8f4; 
+    padding: 3rem 1rem; 
+  }
+  
+  .recipes h1 {
+    font-size: 2.5rem; 
+    color: #d35400; 
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .recipes p {
+    font-size: 1.2rem;
+    color: #555; 
+    margin-bottom: 2rem;
+    line-height: 1.6; 
+  }
+  
+  .recipe-images {
+    display: flex;
+    justify-content: center; 
+    gap: 1.5rem; 
+    margin-bottom: 2rem; 
+  }
+  
+  .recipe-images img {
+    width: 200px; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+  }
+  
+  .recipe-images img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .seemorebtn {
+    background-color: #e67e22; 
+    color: #fff; 
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .seemorebtn:hover {
+    background-color: #d35400; 
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .recipes h1 {
+        font-size: 2rem; 
+    }
+  
+    .recipes p {
+        font-size: 1rem; 
+    }
+  
+    .recipe-images {
+        flex-wrap: wrap;
+        gap: 1rem; 
+    }
+  
+    .recipe-images img {
+        width: 150px; 
+    }
+  }
+  
+    </style>
+</head>
+<body>
+    <!-- Header Section Starts -->
+    <section class="header">
+        <a href="home.html" class="logo">Digital Recipe App</a>
+    
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="signin.php">Add Recipe</a>
+            <a href="recipies.html">Search Recipes</a>
+            <a href="contactUs.php">Contact US</a>
+            <a href="about.html">About Us</a>
+            <a href="signin.php"><button class="loginbtn">Login</button></a>
+        </nav>
+    
+        <div id="menu-btn" class="fas fa-bars" aria-label="Menu"></div>
+    </section>
+    <!-- Header Section Ends -->
+
+    <!-- Hero Header Section Starts -->
+    <section class="hero-header">
+        <div class="container text-center py-5">
+            <h1>Explore, Create, and Share Your Culinary Journey</h1>
+            <p>Explore a world of delicious and easy-to-make recipes with our 
+                Digital Recipe Book. Whether you're a seasoned chef or a beginner 
+                in the kitchen, our app offers an intuitive, user-friendly platform 
+                to find, save, and personalize your favorite recipes. Search by ingredients, 
+                browse categories, and add your own notes for a truly customized cooking experience. 
+                Start cooking with inspiration today and elevate your culinary skills with every meal!</p>
+            <a href="recipies.html"><button class="btn-primary">Search</button></a>
+        </div>
+    </section>
+    <!-- Hero Header Section Ends -->
+
+    <!-- About Us Section Starts -->
+    <section class="about-us py-5 bg-light">
+        <div class="container">
+            <h4>About Us</h4>
+            <h1>Our Recipe, Your Story: Crafting Culinary Adventures Together</h1>
+            <p>Welcome to Recipe Haven, your ultimate digital companion for discovering, creating, and sharing culinary masterpieces!
+
+                Our mission is to make cooking accessible, enjoyable, and inspiring for everyone, whether you’re a seasoned chef, 
+                a beginner in the kitchen, or simply someone passionate about food. With an extensive collection of recipes from 
+                around the world, personalized recommendations, and easy-to-follow instructions, we aim to turn every meal into 
+                a memorable experience.
+                At Recipe Haven, we value diversity and creativity. That’s why our platform allows users to explore a variety 
+                of cuisines, customize recipes to their tastes, and even contribute their own creations to our growing community 
+                of food lovers.
+                We’re committed to making cooking fun, efficient, and full of flavor. 
+                <br>
+                Join us on this delicious journey and 
+                bring your kitchen to life with Recipe Haven!
+
+            </p>
+        </div>
+    </section>
+    <!-- About Us Section Ends -->
+
+   <!-- Video Section Starts -->
+<section class="video text-center py-5">
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WPKKp3hkVx0?si=oYZAke56eXJ--JLW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</section>
+<!-- Video Section Ends -->
+
+
+    <!-- Recipe Section Starts -->
+    <section class="recipes">
+        <div class="container text-center">
+            <h1>Recipes</h1>
+            <p>Discover a world of delicious recipes right at your fingertips! Whether you’re a seasoned chef or just starting your culinary journey, 
+                our collection has something for everyone. From traditional Sri Lankan flavors to modern international delights, each recipe is 
+                thoughtfully crafted to inspire your taste buds. Explore step-by-step instructions, handy cooking tips, and vibrant photos to make 
+                your cooking experience both fun and rewarding. Let’s get cooking and create magic in your kitchen!</p>
+            <div class="recipe-images d-flex justify-content-center gap-3">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/30/2022/12/Top-20-comfort-foods-4870be0.jpg?quality=90&resize=556,505" alt="Recipe 1" class="img-fluid rounded">
+                <img src="https://saffronbistro.ca/wp-content/uploads/2017/11/img-6-300x300.jpg" alt="Recipe 2" class="img-fluid rounded">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIO82rSKJWWBthgLOEbuO0pW58SJyZXz25Axkw3r0znj9TqnkMLNcrpgzniTlytt_ytQI&usqp=CAU" alt="Recipe 3" class="img-fluid rounded">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chilli-ginger-squash-kale-quinoa-ae1d320.jpg?quality=90&resize=440,400" alt="Recipe 3" class="img-fluid rounded">
+  
+            </div>
+            <a href="recipies.html"><button class="seemorebtn">See More</button></a>
+        </div>
+        
+    </section>
+    <!-- Recipe Section Ends -->
+
+    <!-- Contact Section Starts -->
+    <section class="contact-section py-5 bg-light">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <div class="row justify-content-center gap-3">
+                <div class="col-md-3">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <p><a href="mailto:sanduniherath0516.com">Email Us</a></p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                    <p><a href="https://wa.me/+94765875407" target="_blank">Start New Chat</a></p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-phone-alt fa-2x"></i>
+                    <p><a href="tel:+94765875407">Call Us</a></p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p><a href="https://maps.google.com/?q=your+office+address" target="_blank">Find Our Office</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section Ends -->
+
+    <!-- Footer Section Starts -->
+<section class="footer py-4 bg-dark text-light">
+    <div class="container">
+        <!-- Quick Links and Social Icons -->
+        
+         <div class="quickLinks mb-3">
+            <a href="home.html" class="text-decoration-none text-light">Home</a> | 
+            <a href="recipies.html" class="text-decoration-none text-light">Search Recipe</a> |  
+            <a href="signin.php" class="text-decoration-none text-light">Add Recipe</a> | 
+            <a href="signin.php" class="text-decoration-none text-light">Login</a>
+
+        </div>
+
+        <div class="social-icons mb-3">
+            <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <!-- Horizontal line dividing sections -->
+        <div class="line"></div>
+
+        
+        
+
+        <!-- Credit Section -->
+        <div class="credit">
+            © <span>Digital Recipe App</span> | All Rights Reserved! | Sanduni Herath |
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Service</a> | 
+                <a href="contactUs.php">Contact Us</a>
+            
+        </div>
+    </div>
+</section>
+<!-- Footer Section Ends -->
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!--Javacript file-->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
