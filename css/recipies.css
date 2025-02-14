@@ -1,0 +1,121 @@
+body {
+    background-color: #f4f6f9;
+}
+.recipe-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.recipe-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+.recipe-image {
+    height: 250px;
+    object-fit: cover;
+}
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+.modal-ingredients, .modal-steps {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.modal-steps ol {
+    padding-left: 20px;
+}
+.modal-steps li {
+    margin-bottom: 10px;
+}
+
+    .btn-custom {
+        background-color: #FAD7A0;
+        color: #000; /* Optional: Change the text color for contrast */
+        border: none; /* Optional: Remove border */
+    }
+
+    .btn-custom:hover {
+        background-color: #F9C58D; /* Optional: Slightly darker shade for hover effect */
+    }
+
+/* Enhanced Search Bar Styling */
+.search-container {
+position: relative;
+max-width: 600px;
+margin: 0 auto;
+}
+
+.search-input-group {
+display: flex;
+border-radius: 50px;
+overflow: hidden;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+}
+
+.search-input-group:focus-within {
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+transform: translateY(-2px);
+}
+
+#searchInput {
+flex-grow: 1;
+border: none;
+padding: 12px 20px;
+font-size: 16px;
+background-color: #ffffff;
+color: #333;
+transition: background-color 0.3s ease;
+}
+
+#searchInput::placeholder {
+color: #999;
+transition: color 0.3s ease;
+}
+
+#searchInput:focus {
+outline: none;
+background-color: #f9f9f9;
+}
+
+#searchInput:focus::placeholder {
+color: #bbb;
+}
+
+#searchButton {
+background-color: #FAD7A0;
+color: #333;
+border: none;
+padding: 10px 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.3s ease;
+}
+
+#searchButton:hover {
+background-color: #F9C58D;
+transform: scale(1.05);
+}
+
+#searchButton i {
+font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.search-input-group {
+flex-direction: column;
+border-radius: 10px;
+}
+
+#searchInput,
+#searchButton {
+width: 100%;
+padding: 10px;
+}
+}

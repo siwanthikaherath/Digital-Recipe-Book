@@ -1,5 +1,5 @@
 <?php
-require 'db.php';
+require '../includes/db.php';
 
 try {
     // Validate inputs

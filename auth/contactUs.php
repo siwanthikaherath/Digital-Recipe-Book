@@ -94,62 +94,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Digital Recipe App - Contact Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #ff6b6b;
-            --secondary-color: #4ecdc4;
-            --background-color: #f9f9f9;
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            background: url('https://starhospitals.in/build/assets/contact-caf2cbb3.webp') no-repeat;
-            background-size: cover;
-            color: #333;
-        }
-        .contact-container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 30px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .error-message {
-            color: #dc3545;
-            margin-bottom: 15px;
-        }
-        .success-message {
-            color: #28a745;
-            margin-bottom: 15px;
-        }
-        .form-control:focus {
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 0.2rem rgba(255,107,107,0.25);
-        }
-        .btn-submit {
-            background-color: var(--primary-color);
-            color: white;
-            transition: all 0.3s ease;
-        }
-        .btn-submit:hover {
-            background-color: #ff5252;
-            transform: translateY(-3px);
-        }
-    </style>
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contactUS.css">
 </head>
 <body>
     <!-- Header Section Starts -->
     <section class="header">
-        <a href="home.html" class="logo">Digital Recipe App</a>
+        <a href="../home.html" class="logo">Digital Recipe App</a>
     
         <nav class="navbar">
-            <a href="home.html">Home</a>
+            <a href="../home.html">Home</a>
             <a href="signin.php">Add Recipe</a>
-            <a href="recipies.html">Search Recipes</a>
+            <a href="../includes/recipies.php">Search Recipes</a>
             <a href="contactUs.php">Contact US</a>
-            <a href="about.html">About Us</a>
+            <a href="../about.html">About Us</a>
             <a href="signin.php"><button class="loginbtn">Login</button></a>
         </nav>
     
@@ -247,8 +207,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- Quick Links and Social Icons -->
         
          <div class="quickLinks mb-3">
-            <a href="home.html" class="text-decoration-none text-light">Home</a> | 
-            <a href="recipies.html" class="text-decoration-none text-light">Search Recipe</a> |  
+            <a href="../home.html" class="text-decoration-none text-light">Home</a> | 
+            <a href="../includes/recipies.php" class="text-decoration-none text-light">Search Recipe</a> |  
             <a href="signin.php" class="text-decoration-none text-light">Add Recipe</a> | 
             <a href="signin.php" class="text-decoration-none text-light">Login</a>
 
@@ -285,24 +245,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!--Javacript file-->
-    <script src="js/script.js"></script>       
+    <script src="../js/script.js"></script>       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.getElementById('contactForm');
-            
-            contactForm.addEventListener('submit', function(event) {
-                const name = document.getElementById('name').value.trim();
-                const email = document.getElementById('email').value.trim();
-                const subject = document.getElementById('subject').value;
-                const message = document.getElementById('message').value.trim();
-                
-                if (!name || !email || !subject || !message) {
-                    event.preventDefault();
-                    alert('Please fill out all fields.');
-                }
-            });
-        });
-    </script>
+    <script src="../js/contactUS.js"> </script>
+    
 </body>
 </html>
