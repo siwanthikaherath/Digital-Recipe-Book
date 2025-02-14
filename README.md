@@ -40,8 +40,8 @@ This is a Recipe Management Web Application that allows users to add, view, and 
 
 
 ### 📌 Usage Guide
-Sign Up for an account.
-Sign In to access recipe features.
-Add Recipes with details like title, ingredients, and instructions.
-View Recipes submitted by other users.
-Comment on recipes and interact with other users.
+- Sign Up for an account.
+- Sign In to access recipe features.
+- Add Recipes with details like title, ingredients, and instructions.
+- View Recipes submitted by other users.
+- Comment on recipes and interact with other users.
