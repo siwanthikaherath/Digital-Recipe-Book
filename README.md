@@ -30,10 +30,10 @@ This is a Recipe Management Web Application that allows users to add, view, and 
     cd recipe-app
 3. Set up a database in MySQL using the database.sql file.
 4. Configure the database connection in includes/db.php:
-    $host = "localhost";
-    $user = "your_username";
-    $password = "your_password";
-    $dbname = "your_database_name";
+   -  $host = "localhost";
+   -  $user = "your_username";
+   -  $password = "your_password";
+   -  $dbname = "your_database_name";
 5. Start a local server using XAMPP or any PHP server.
     php -S localhost:8000
 6. Open http://localhost:8000/home.html in your browser
