@@ -22,6 +22,7 @@ This is a Recipe Management Web Application that allows users to add, view, and 
 ---
 
 ## Project Structure
+```
 
 Digital-Recipe-App
 ├── auth/                     # Authentication system (login.php, logout.php, register.php)
@@ -43,6 +44,7 @@ Digital-Recipe-App
 ├── README.md                 # Project documentation
 └── .gitignore                # Git ignore file
 
+```
 ### 🚀 Setup Instructions
 
 1. Clone the repository:
